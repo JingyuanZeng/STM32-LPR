@@ -1,0 +1,5 @@
+-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\Library\inc -I..\Utilities\inc 
+-I "D:\Program Files\ARM\RV31\INC" 
+-I "D:\Program Files\ARM\CMSIS\Include" 
+-I "D:\Program Files\ARM\Inc\ST\STM32F10x" 
+-o "stm32f10x_spi.o" --omf_browse "stm32f10x_spi.crf" --depend "stm32f10x_spi.d" "..\Library\src\stm32f10x_spi.c"

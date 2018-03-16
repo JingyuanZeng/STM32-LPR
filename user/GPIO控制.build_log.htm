@@ -1,0 +1,317 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Simon Riley, UNSC, LIC=JL2BS-L8ZEN-306NC-7K9KE-1AVNE-REDHJ
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.14.0.0
+Toolchain Path:  H:\Keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DARMSTM.DLL V1.65.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.14.0_KEIL
+Dialog DLL:      DARMSTM.DLL V1.65.0.0
+ 
+<h2>Project:</h2>
+E:\STM32\LPR4\user\GPIO控制.uvproj
+Project File Date:  03/10/2018
+
+<h2>Output:</h2>
+Rebuild target 'Target 1'
+compiling main.c...
+..\Utilities\inc\led.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif 
+..\Utilities\inc\delay.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif 
+..\Utilities\inc\lcd.h(26): warning:  #1-D: last line of file ends without a newline
+  #endif /* __LTK_GPIO_H */
+..\Utilities\inc\lcd.h(26): warning:  #1-D: last line of file ends without a newline
+  #endif /* __LTK_GPIO_H */
+ov7670.h(8): warning:  #1295-D: Deprecated declaration OV7670_Gpio_Init - give arg types
+  void OV7670_Gpio_Init();
+ov7670.h(9): warning:  #1295-D: Deprecated declaration SCCB_SID_change_in - give arg types
+  void SCCB_SID_change_in();//引脚切换为输入
+ov7670.h(10): warning:  #1295-D: Deprecated declaration SCCB_SID_change_out - give arg types
+  void SCCB_SID_change_out();//引脚切换为输出
+ov7670.h(17): warning:  #1295-D: Deprecated declaration getAck - give arg types
+  unsigned char getAck();
+string.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif 
+main.c(55): warning:  #1295-D: Deprecated declaration Show_Title - give arg types
+  void Show_Title();//显示标题
+main.c(103): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(LED1_GPIO_PORT, LED1_GPIO_PIN,LED_flag>>7);
+main.c(108): warning:  #223-D: function "LCD_SetWindows" declared implicitly
+        LCD_SetWindows(0,0,320,240);//设置显示窗口
+main.c(109): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(LCD_RS_PORT, LCD_RS_PIN,1);//标志：数据写入
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(FIFO_WRST_PORT, FIFO_WRST_PIN, 0);
+main.c(113): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(FIFO_WRST_PORT, FIFO_WRST_PIN, 1);
+main.c(114): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(FIFO_WR_PORT, FIFO_WR_PIN, 1);
+main.c(117): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(FIFO_WR_PORT, FIFO_WR_PIN, 0);
+main.c(164): warning:  #223-D: function "LCD_SetWindows" declared implicitly
+        LCD_SetWindows(0,0,320,240);//设置显示窗口
+main.c(165): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(LCD_RS_PORT, LCD_RS_PIN,1);//标志：数据写入
+main.c(168): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(FIFO_WRST_PORT, FIFO_WRST_PIN, 0);
+main.c(169): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(FIFO_WRST_PORT, FIFO_WRST_PIN, 1);
+main.c(170): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(FIFO_WR_PORT, FIFO_WR_PIN, 1);
+main.c(173): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(FIFO_WR_PORT, FIFO_WR_PIN, 0);
+main.c(287): warning:  #223-D: function "LCD_ReadPoint" declared implicitly
+                        num1=LCD_ReadPoint(b+296,a+191);
+main.c(297): warning:  #177-D: variable "b" was declared but never referenced
+        u16 a,b,e,i,num1;
+main.c(321): warning:  #177-D: variable "Compare_num" was declared but never referenced
+        u16 Compare_num,num_save;
+main.c(352): warning:  #177-D: variable "e" was declared but never referenced
+        u16 a,b,e,num1;
+main.c(372): warning:  #177-D: variable "e" was declared but never referenced
+        u16 a,b,e,num1;
+main.c(475): warning:  #223-D: function "LCD_ReadPoint" declared implicitly
+                                num=LCD_ReadPoint(b,Min_240);
+main.c(484): warning:  #223-D: function "LCD_ReadPoint" declared implicitly
+                                num=LCD_ReadPoint(b,Max_240);
+main.c(500): warning:  #223-D: function "LCD_ReadPoint" declared implicitly
+                                num=LCD_ReadPoint(b,a);
+main.c(524): warning:  #223-D: function "LCD_ReadPoint" declared implicitly
+                                num=LCD_ReadPoint(b,a);
+main.c(565): warning:  #223-D: function "LCD_ReadPoint" declared implicitly
+                                        num=LCD_ReadPoint(b,a+191);
+main.c(573): warning:  #223-D: function "LCD_ReadPoint" declared implicitly
+                                                num=LCD_ReadPoint(b,a+191);
+main.c(585): warning:  #223-D: function "LCD_ReadPoint" declared implicitly
+                                                        num=LCD_ReadPoint(b,a+191);
+main.c(459): warning:  #177-D: variable "e" was declared but never referenced
+        u16 a,b,e;
+main.c(462): warning:  #177-D: variable "num1" was declared but never referenced
+        u8 num1,num2,num3;
+main.c(599): warning:  #177-D: variable "e" was declared but never referenced
+        u16 a,b,e;
+main.c(600): warning:  #177-D: variable "i" was declared but never referenced
+        u16 i,u;
+main.c(600): warning:  #177-D: variable "u" was declared but never referenced
+        u16 i,u;
+main.c(857): warning:  #223-D: function "LCD_ReadPoint" declared implicitly
+                        num=LCD_ReadPoint(b,a);//读取像素值
+main.c(942): warning:  #223-D: function "LCD_ReadPoint" declared implicitly
+                        num_color=LCD_ReadPoint(b,a);//读取像素，代码优化速度有待提升 ？扫描方法也可优化，以提升速度
+main.c(984): warning:  #223-D: function "LCD_ReadPoint" declared implicitly
+                num_color=LCD_ReadPoint(b,Mid_ChangePoint_240);//读取像素，代码优化速度有待提升 ？扫描方法也可优化，以提升速度
+main.c(1014): warning:  #223-D: function "LCD_ReadPoint" declared implicitly
+                        num_color=LCD_ReadPoint(b,a);//读取像素，代码优化速度有待提升 ？扫描方法也可优化，以提升速度
+main.c(1060): warning:  #223-D: function "LCD_ReadPoint" declared implicitly
+                num_color=LCD_ReadPoint(b,Mid_ChangePoint_240);//读取像素，代码优化速度有待提升 ？扫描方法也可优化，以提升速度
+main.c(1093): warning:  #223-D: function "LCD_ReadPoint" declared implicitly
+                        num_color=LCD_ReadPoint(b,a);//读取像素，代码优化速度有待提升 ？扫描方法也可优化，以提升速度
+main.c(1120): warning:  #223-D: function "LCD_SetWindows" declared implicitly
+        LCD_SetWindows(0,0,320,240);//设置显示窗口
+main.c(1121): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(LCD_RS_PORT, LCD_RS_PIN,1);//标志：数据写入
+main.c(1124): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(FIFO_WRST_PORT, FIFO_WRST_PIN, 0);
+main.c(1125): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(FIFO_WRST_PORT, FIFO_WRST_PIN, 1);
+main.c(1126): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(FIFO_WR_PORT, FIFO_WR_PIN, 1);
+main.c(1129): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(FIFO_WR_PORT, FIFO_WR_PIN, 0);
+main.c(1226): warning:  #223-D: function "LCD_SetWindows" declared implicitly
+        LCD_SetWindows(0,0,320,240);//设置显示窗口
+main.c(1227): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(LCD_RS_PORT, LCD_RS_PIN,1);//标志：数据写入
+main.c(1230): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(FIFO_WRST_PORT, FIFO_WRST_PIN, 0);
+main.c(1231): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(FIFO_WRST_PORT, FIFO_WRST_PIN, 1);
+main.c(1232): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(FIFO_WR_PORT, FIFO_WR_PIN, 1);
+main.c(1235): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(FIFO_WR_PORT, FIFO_WR_PIN, 0);
+main.c(1285): warning:  #223-D: function "LCD_SetWindows" declared implicitly
+        LCD_SetWindows(0,0,320,240);//设置显示窗口
+main.c(1286): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(LCD_RS_PORT, LCD_RS_PIN,1);//标志：数据写入
+main.c(1289): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(FIFO_WRST_PORT, FIFO_WRST_PIN, 0);
+main.c(1290): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(FIFO_WRST_PORT, FIFO_WRST_PIN, 1);
+main.c(1291): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(FIFO_WR_PORT, FIFO_WR_PIN, 1);
+main.c(1294): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(FIFO_WR_PORT, FIFO_WR_PIN, 0);
+main.c(1511): warning:  #951-D: return type of function "main" must be "int"
+  void main(void)
+main.c(1525): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(FIFO_OE_PORT, FIFO_OE_PIN, 0);
+main.c(1514): warning:  #177-D: variable "i" was declared but never referenced
+        u16 i;
+main.c: 67 warnings, 0 errors
+assembling startup_stm32f10x_md.s...
+compiling stm32f10x_it.c...
+compiling lcd.c...
+..\Utilities\inc\lcd.h(26): warning:  #1-D: last line of file ends without a newline
+  #endif /* __LTK_GPIO_H */
+..\Utilities\inc\lcd.h(26): warning:  #1-D: last line of file ends without a newline
+  #endif /* __LTK_GPIO_H */
+..\Utilities\inc\delay.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif 
+..\Utilities\src\lcd.c(42): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(LCD_RD_PORT, LCD_RD_PIN,1);
+..\Utilities\src\lcd.c(43): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(LCD_WR_PORT, LCD_WR_PIN,1);
+..\Utilities\src\lcd.c(44): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(LCD_RS_PORT, LCD_RS_PIN,1);
+..\Utilities\src\lcd.c(45): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(LCD_CS_PORT, LCD_CS_PIN,0);//片选，拉低有效
+..\Utilities\src\lcd.c(50): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(LCD_WR_PORT, LCD_WR_PIN,0);
+..\Utilities\src\lcd.c(51): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(LCD_WR_PORT, LCD_WR_PIN,1);
+..\Utilities\src\lcd.c(55): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(LCD_RS_PORT, LCD_RS_PIN,0);
+..\Utilities\src\lcd.c(60): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(LCD_RS_PORT, LCD_RS_PIN,1);
+..\Utilities\src\lcd.c(65): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(LCD_REST_PORT, LCD_REST_PIN,1);//需要一定的延时，保证初始化进行
+..\Utilities\src\lcd.c(67): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(LCD_REST_PORT, LCD_REST_PIN,0);
+..\Utilities\src\lcd.c(69): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(LCD_REST_PORT, LCD_REST_PIN,1);
+..\Utilities\src\lcd.c(186): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(LCD_RS_PORT, LCD_RS_PIN,1);//标志：数据写入
+..\Utilities\src\lcd.c(196): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(LCD_RS_PORT, LCD_RS_PIN,1);//标志：数据写入
+..\Utilities\src\lcd.c(273): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(LCD_RS_PORT, LCD_RS_PIN,1);
+..\Utilities\src\lcd.c(275): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(LCD_CS_PORT, LCD_CS_PIN,0);//片选，拉低有效
+..\Utilities\src\lcd.c(278): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(LCD_RD_PORT, LCD_RD_PIN,0);
+..\Utilities\src\lcd.c(281): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(LCD_RD_PORT, LCD_RD_PIN,1);
+..\Utilities\src\lcd.c(284): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(LCD_RD_PORT, LCD_RD_PIN,0);
+..\Utilities\src\lcd.c(289): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(LCD_RD_PORT, LCD_RD_PIN,1);
+..\Utilities\src\lcd.c(292): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(LCD_RD_PORT, LCD_RD_PIN,0);
+..\Utilities\src\lcd.c(296): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(LCD_RD_PORT, LCD_RD_PIN,1);
+..\Utilities\src\lcd.c(306): warning:  #1-D: last line of file ends without a newline
+  }
+..\Utilities\src\lcd.c: 25 warnings, 0 errors
+compiling delay.c...
+..\Utilities\inc\delay.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif 
+..\Utilities\src\delay.c: 1 warning, 0 errors
+compiling debug.c...
+compiling led.c...
+..\Utilities\inc\led.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif 
+..\Utilities\src\led.c: 1 warning, 0 errors
+compiling usart.c...
+compiling ov7670.c...
+ov7670.h(8): warning:  #1295-D: Deprecated declaration OV7670_Gpio_Init - give arg types
+  void OV7670_Gpio_Init();
+ov7670.h(9): warning:  #1295-D: Deprecated declaration SCCB_SID_change_in - give arg types
+  void SCCB_SID_change_in();//引脚切换为输入
+ov7670.h(10): warning:  #1295-D: Deprecated declaration SCCB_SID_change_out - give arg types
+  void SCCB_SID_change_out();//引脚切换为输出
+ov7670.h(17): warning:  #1295-D: Deprecated declaration getAck - give arg types
+  unsigned char getAck();
+ov7670.c(86): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(SCCB_SID_PORT, SCCB_SID_PIN, 1);
+ov7670.c(87): warning:  #223-D: function "delay" declared implicitly
+        delay(DELAYTIME);
+ov7670.c(88): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(SCCB_SIC_PORT, SCCB_SIC_PIN, 1);
+ov7670.c(90): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(SCCB_SID_PORT, SCCB_SID_PIN, 0);
+ov7670.c(92): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(SCCB_SIC_PORT, SCCB_SIC_PIN, 0);
+ov7670.c(98): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(SCCB_SID_PORT, SCCB_SID_PIN, 0);
+ov7670.c(99): warning:  #223-D: function "delay" declared implicitly
+        delay(DELAYTIME);
+ov7670.c(100): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(SCCB_SIC_PORT, SCCB_SIC_PIN, 1);
+ov7670.c(102): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(SCCB_SID_PORT, SCCB_SID_PIN, 1);
+ov7670.c(107): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(SCCB_SID_PORT, SCCB_SID_PIN, 1);
+ov7670.c(108): warning:  #223-D: function "delay" declared implicitly
+        delay(DELAYTIME);
+ov7670.c(109): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(SCCB_SIC_PORT, SCCB_SIC_PIN, 1);
+ov7670.c(111): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(SCCB_SIC_PORT, SCCB_SIC_PIN, 0);
+ov7670.c(113): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(SCCB_SID_PORT, SCCB_SID_PIN, 0);
+ov7670.c(121): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(SCCB_SID_PORT, SCCB_SID_PIN, 1);
+ov7670.c(122): warning:  #223-D: function "delay" declared implicitly
+        delay(DELAYTIME);
+ov7670.c(124): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(SCCB_SIC_PORT, SCCB_SIC_PIN, 1);
+ov7670.c(130): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(SCCB_SIC_PORT, SCCB_SIC_PIN, 0);
+ov7670.c(134): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(SCCB_SID_PORT, SCCB_SID_PIN, 0);
+ov7670.c(144): warning:  #188-D: enumerated type mixed with another type
+                GPIO_WriteBit(SCCB_SID_PORT, SCCB_SID_PIN, (((dat<<i)&0x80))>>7);
+ov7670.c(145): warning:  #223-D: function "delay" declared implicitly
+                delay(DELAYTIME);
+ov7670.c(147): warning:  #188-D: enumerated type mixed with another type
+                GPIO_WriteBit(SCCB_SIC_PORT, SCCB_SIC_PIN, 1);
+ov7670.c(150): warning:  #188-D: enumerated type mixed with another type
+                GPIO_WriteBit(SCCB_SIC_PORT, SCCB_SIC_PIN, 0);   
+ov7670.c(153): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(SCCB_SID_PORT, SCCB_SID_PIN, 0);
+ov7670.c(164): warning:  #188-D: enumerated type mixed with another type
+                GPIO_WriteBit(SCCB_SIC_PORT, SCCB_SIC_PIN, 1);
+ov7670.c(165): warning:  #223-D: function "delay" declared implicitly
+                delay(DELAYTIME);
+ov7670.c(170): warning:  #188-D: enumerated type mixed with another type
+                GPIO_WriteBit(SCCB_SIC_PORT, SCCB_SIC_PIN, 0);   
+ov7670.c(175): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(SCCB_SID_PORT, SCCB_SID_PIN, 0);
+ov7670.c: 32 warnings, 0 errors
+compiling key.c...
+compiling string.c...
+string.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif 
+string.c: 1 warning, 0 errors
+compiling stm32f10x_cec.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_exti.c...
+compiling misc.c...
+compiling stm32f10x_tim.c...
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+linking...
+Program Size: Code=38510 RO-data=2158 RW-data=6820 ZI-data=2396  
+FromELF: creating hex file...
+".\GPIO控制.axf" - 0 Error(s), 127 Warning(s).
+</pre>
+</body>
+</html>
